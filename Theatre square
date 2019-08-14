@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Long l,b,s,a;
+	long d;
+		
+	Scanner scan=new Scanner(System.in);
+	l=scan.nextLong();
+	b=scan.nextLong();
+	a=scan.nextLong();
+	 s=l%a==0?(l/a):(l/a)+1;
+	 Long s2;
+	 s2=b%a==0?(b/a):(b/a)+1;
+	 d=s*s2;
+	 
+	System.out.println(d);
+	}
+}
