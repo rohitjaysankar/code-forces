@@ -1,0 +1,24 @@
+import java.util.*;
+import java.io.*;
+public class Main{
+    public static void main(String args[])
+    {
+        Scanner scan=new Scanner(System.in);
+        int k,n,w;
+        k=scan.nextInt();
+        n=scan.nextInt();
+        w=scan.nextInt();
+        int f;
+        f=(w*(w+1)/2)*k;
+       if (f>n){ System.out.println(f-n);}
+       else 
+       {System.out.println(0);}
+           
+        
+       
+       
+        //System.out.println(f);
+        
+    }
+    
+}
