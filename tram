@@ -1,0 +1,31 @@
+import java.util.*;
+import java.io.*;
+public class Main
+{
+    
+    public static void main(String args[])
+    {
+        
+        Scanner scan=new Scanner(System.in);
+        int max=0;
+        int n;
+        int fir;
+        int sec;
+        int present=0;
+        n=scan.nextInt();
+        for(int i=0;i<n;i++)
+        {
+            
+            fir=scan.nextInt();
+            sec=scan.nextInt();
+            present=present+sec-fir;
+            if(present>max)
+            {
+                max=present;
+            }
+        }
+        
+     System.out.println(max);   
+    }
+}
+ 
