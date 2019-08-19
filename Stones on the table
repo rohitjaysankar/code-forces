@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		//System.out.println("Hello World");
+		String s="sample";
+		int d;
+		Scanner scan=new Scanner(System.in);
+		// System.out.println("taking int");
+		d=scan.nextInt();
+	for(int i=0;i<1;i++)
+	{
+	    //System.out.println("inside for loop");
+	    s=scan.next();
+	}
+		// System.out.println("finding length of string");
+		d=s.length();
+		// System.out.println(d);
+	
+	
+	for(int i=0;i<d;i++)
+	{
+	    	s=s.replace("RR","R");
+	s=s.replace("GG","G");
+	s=s.replace("BB","B");
+	}
+	
+	d=d-s.length();
+	System.out.println(d);
+		
+	}
+}
