@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+ 
+public class Main{
+    public static void main(String args[])
+    {
+        int l,b;
+        Scanner scan=new Scanner(System.in);
+        l=scan.nextInt();
+        int k=0;
+        b=scan.nextInt();
+       k=(l*b)/2;
+       System.out.println(k);
+        
+    }
+}
