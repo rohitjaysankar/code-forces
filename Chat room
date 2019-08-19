@@ -1,0 +1,59 @@
+import java.util.*;
+import java.io.*;
+public class Main{
+    public static void main(String args[])
+    {
+        String s;
+        String d="";
+        String h="";
+        String a="hello";
+        
+        Scanner scan=new Scanner(System.in);
+        s=scan.nextLine();
+        for(int i=0;i<s.length();i++)
+        {
+            if(s.charAt(i)=='h'||s.charAt(i)=='e'||s.charAt(i)=='l'||s.charAt(i)=='o')
+            {
+                d=d+s.charAt(i);
+            }
+            
+        }
+        for(int i=0;i<s.length();i++)
+        
+        {
+            //System.out.println("for loop inside");
+            //System.out.println(s.charAt(i));
+            if(s.charAt(i)=='h'&& h.length()==0)
+            {
+                h=h+s.charAt(i);
+            }
+            else if(s.charAt(i)=='e'&& h.length()==1)
+            {
+                h=h+s.charAt(i);
+            }
+            else if(s.charAt(i)=='l'&& (h.length()==2||h.length()==3))
+            {
+                h=h+s.charAt(i);
+            }
+            else if(s.charAt(i)=='o'&& h.length()==4)
+                  {
+                      h=h+s.charAt(i);
+                  }
+                  else
+                  {
+                      
+                  }
+        }
+      //  System.out.println(h);
+       // System.out.println(d);
+       if(h.equals(a))
+       {
+           System.out.println("YES");
+       }
+       else
+       {
+           System.out.println("NO");
+       }
+    }
+    
+}
