@@ -1,0 +1,53 @@
+import java.io.*;
+import java.util.*;
+ 
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	    String s;
+	    s=scan.nextLine();
+	    if(s.length()>1)
+	    {
+	    String d="+";
+	    s=s.replace(d,"");
+	   // System.out.println(s);
+	    int arr[]=new int [s.length()];
+	    //Mergesort obj=new Mergesort();
+	    for(int i=0;i<s.length();i++)
+	    {
+	        arr[i]=Character.getNumericValue(s.charAt(i));  
+	       // System.out.println(arr[i]);
+	    }
+	    int t=0;
+	   // obj.sort(arr,0,s.length()-1);
+	   for(int i=0;i<s.length();i++)
+	   {
+	    
+	       for(int j=0;j<s.length();j++)
+	       {
+	           if(arr[i]<arr[j])
+	           {
+	               t=arr[i];
+	               arr[i]=arr[j];
+	               arr[j]=t;
+	           }
+	       }
+	   }
+	    
+	    System.out.print(arr[0]);
+	    
+	    for(int i=1;i<s.length();i++)
+	    {
+	        System.out.print("+"+arr[i]);
+	       // return ;
+	        
+	    }
+	    
+	    }
+	    else 
+	    {System.out.println(s);
+	       // return ;
+	    }
+	}
+}
