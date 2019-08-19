@@ -1,0 +1,17 @@
+import java.util.*;
+import java.io.*;
+ 
+public class Main{
+    public static void main(String args[])
+    
+    {
+    Scanner scan=new Scanner(System.in);
+    String s;
+    s=scan.nextLine();
+    //s.charAt(0)="";
+    char b=Character.toUpperCase(s.charAt(0));
+    String a=s.substring(1,s.length());
+   // System.out.println(a);
+      System.out.println(b+""+a);  
+    }
+}
