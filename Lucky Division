@@ -1,0 +1,46 @@
+import java.io.*;
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner scan=new Scanner(System.in);
+        String s;
+        s=scan.nextLine();
+        String f="";
+        int i=0;
+        int r=0;
+        int arr[]={44,47,77,74,444,447,474,477,744,747,774,777};
+        
+        
+        
+        while(i<s.length())
+     {
+         if(s.charAt(i)=='4'||s.charAt(i)=='7')
+         {
+             f=f+s.charAt(i);
+         }
+         i++;
+     }
+     
+     if(s.equals(f)||(Integer.parseInt(s)%4==0)||Integer.parseInt(s)%7==0)
+     {
+         System.out.println("YES");
+         
+     }
+     else 
+     {
+         r=Integer.parseInt(s);
+        for (int m=0;m<12;m++)
+        {
+            if(r%arr[m]==0)
+            {
+                System.out.println("YES");
+                return ;
+            }
+        }
+        System.out.println("NO"); 
+     }
+    }
+    
+}
