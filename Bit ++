@@ -1,0 +1,45 @@
+import java.io.*;
+import java.util.Scanner;
+ 
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	    int k,l=0;
+	    String s;
+	    int h;
+ 
+	    k=scan.nextInt();
+	    for(int i=0;i<k;i++)
+	    
+	    {
+	        h=0;
+	        //System.out.println("entering for loop");
+	        s=scan.next();
+	        while(h<s.length())
+	        {
+	           // System.out.println("entering while loop");
+	            if(s.charAt(h)=='-')
+	            {
+	               // System.out.println("entering if loop");
+	                l=l-1;
+	                h++;
+	                break;
+	            }
+	            else if(s.charAt(h)=='+')
+	            {
+	                //System.out.println("entering else if loop");
+	                 h++;
+	                l=l+1;
+	                break;
+	            }
+	            else{ //System.out.println("entering else loop");
+	                h++;}
+	        }
+	        
+	        
+	    }
+	    
+		System.out.println(l);
+	}
+}
