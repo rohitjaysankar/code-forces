@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.Scanner;
+ 
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	    String d,s;
+	    d=scan.nextLine();
+	    s=scan.nextLine();
+	    d=d.toLowerCase();
+	    s=s.toLowerCase();
+	    int k=0;
+	    for(int i=0;i<s.length();i++)
+	    
+	    {
+	        
+	        if((int)d.charAt(i)<(int)s.charAt(i))
+	        {
+	            System.out.println("-1");
+	            return ;
+	        }
+	        else if((int)d.charAt(i)>(int)s.charAt(i))
+	        {
+	            System.out.println("1");
+	            return ;
+	        }
+	        else{};
+	    }
+	    
+	    System.out.println(k);
+	     return ;
+	}
+}
