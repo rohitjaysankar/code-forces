@@ -1,0 +1,19 @@
+import java.util.*;
+import java.io.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner scan=new Scanner(System.in);
+        String f=scan.nextLine();
+        if(f.contains("H")||f.contains("Q")||f.contains("9"))//)
+        {
+            System.out.println("YES");
+        }
+        else //(f.contains("+"))
+        {
+            
+             System.out.println("NO");
+        }
+    }
+}
