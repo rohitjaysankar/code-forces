@@ -1,0 +1,40 @@
+import java.util.*;
+import java.io.*;
+public class Main{
+    public static void main(String args[])
+    {
+        String s="";
+       // System.out.println(s.length());
+        Scanner scan=new Scanner(System.in);
+       // BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
+        int g=scan.nextInt();
+        int f=scan.nextInt();
+        int i=0;
+       while(i!=1)
+        {
+            if(s.length()!=0)
+            {
+                //i=1;
+                break;
+        
+            }
+           //System.out.println("this is the "+i+"time");
+           s=scan.nextLine();
+           //System.out.println("this is the THE LENGTH OF CURRENT STRING"+s.length());
+        }
+        
+    
+    /* for(i=0;i<1;i++)
+       {
+            s=scan.nextLine();
+       }
+       */
+                for( int d=0;d<f;d++)
+        {
+            s=s.replace("BG","GB");
+        }
+          System.out.println(s);
+          //return ;
+                
+    }
+}
