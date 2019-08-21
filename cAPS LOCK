@@ -1,0 +1,8 @@
+public class z
+
+{
+public static void main(String[]A)
+{
+String s=new java.util.Scanner(System.in).next();
+System.out.print(s.matches(".[A-Z]*")?(char)(s.charAt(0)^32)+s.substring(1).toLowerCase():s);
+}
