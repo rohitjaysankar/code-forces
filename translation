@@ -1,0 +1,49 @@
+
+import java.util.*;
+import java.io.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	    String s=scan.nextLine();
+	    String t=scan.nextLine();
+	    String z="";
+	    int f=s.length();
+	    int a=t.length();
+	    
+	    //int g=0;
+	    int q=0;
+	    if(f!=a)
+	    {
+	        System.out.println("NO");
+	        return ;
+	        
+	    }
+	 
+	        f=f-1;
+	        for( q=f;q>f/2;q--)
+	        {
+	           z=z+s.charAt(q); 
+	        }
+	        for(int x=q;x>=0;x--)
+	        {
+	            z=z+s.charAt(x); 
+	        }
+	         
+	       if(z.equals(t))
+	       {
+	           System.out.println("YES");
+	           return ;
+	           
+	       }
+	       else
+	       {
+	           System.out.println("NO");
+	           return ;
+	       }
+	      
+	        
+	   
+	}
+}
