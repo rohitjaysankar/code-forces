@@ -1,0 +1,36 @@
+
+
+import java.util.*;
+import java.io.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner scan=new Scanner(System.in);
+        int k=0;
+        String h=scan.nextLine();
+        for(int i=0;i<h.length();i++)
+        {
+            if(Character.isLowerCase(h.charAt(i)))
+            {
+                k++;
+                
+            }
+        }
+    
+    int b=h.length()-k;
+    if(b>k)
+    {
+        h=h.toUpperCase();
+    }
+    else {
+        h=h.toLowerCase();
+    }
+       
+    
+    
+
+System.out.println(h); 
+		//System.out.println("Hello World");
+	}	
+}
