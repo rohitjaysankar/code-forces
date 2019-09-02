@@ -1,0 +1,19 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.*;
+import java.io.*;
+public class Main {
+    public static void main(String args[])
+    {
+        Scanner scan=new Scanner(System.in);
+        String s=scan.nextLine();
+        String g=s.replace("WUB"," ");
+        System.out.print(g);
+    }
+    
+}
