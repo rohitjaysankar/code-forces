@@ -1,0 +1,49 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.io.*;
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	    String l=scan.nextLine();
+	    int j=0;
+	    int k=scan.nextInt();
+	    List<Integer> levels = new ArrayList<>();
+	    for(int i=0;i<k;i++)
+	    {
+	        j=scan.nextInt();
+	        levels.add(j);
+	    }
+	k=scan.nextInt();
+	  //List<> levels = new ArrayList<>
+	    for(int i=0;i<k;i++)
+	    {
+	        j=scan.nextInt();
+	        levels.add(j);
+	    }
+	
+	j=Integer.valueOf(l);
+	    for(int i=1;i<=j;i++)
+	    {
+	        if(levels.contains(i))
+	        {
+	            
+	        }
+	        else{
+	            System.out.println("Oh, my keyboard!");
+	            return;
+	        }
+	       
+	        
+	    }
+	     System.out.println("I become the guy.");
+	}
+	
+}
