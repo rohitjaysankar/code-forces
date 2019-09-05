@@ -1,0 +1,42 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.*;
+import java.io.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	    
+	    int n=scan.nextInt();
+	    int a=scan.nextInt();
+	    int max=a;
+	    int min=a;
+	    int maxp=1,minp=1;
+	    int g=0;
+	    for(int i=2;i<=n;i++)
+	    {
+	        g=scan.nextInt();
+	        if(g<=min)
+	        {
+	            min=g;
+	            minp=i;
+	        }
+	        if(g>max)
+	        {
+	            max=g;
+	            maxp=i;
+	        }
+	    }
+	    //System.out.println(max);
+	    //System.out.println(min);
+	    g=maxp<minp?(maxp-1)+(n-(minp)):(maxp-1)+(n-(minp+1));
+	    System.out.println(g);
+	    
+		//System.out.println("Hello World");
+	}
+}
