@@ -1,0 +1,52 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.*;
+import java.io.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	    
+	    int oddn,oddp,evenn,evenp,s;
+	    int i=scan.nextInt();
+	    
+	    evenn=0;
+	    oddn=0;
+	    evenp=0;
+	    oddp=0;
+	    for(int j=0;j<i;j++)
+	    {
+	        if((s=scan.nextInt())%2==0)
+	        {
+	            evenn++;
+	            evenp=j;
+	            
+	        }
+	        else
+	        {
+	            oddn++;
+	            oddp=j;
+	        }
+	    }
+	    
+	    if(oddn>evenn)
+	    {
+	        evenp++;
+	        System.out.println(evenp);
+	    }
+	    else
+	    {
+	        oddp++;
+	        
+	         System.out.println(oddp);
+	    }
+	        
+	    
+	}
+	
+}
