@@ -1,0 +1,38 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.io.*;
+import java.util.*;
+import java.lang.Math;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	    int s=Integer.valueOf(scan.nextLine());
+	     String n=scan.nextLine();
+	     String p=scan.nextLine();
+	     int  a,b,c,d,e,f,sum=0;
+	
+	while(s>0)
+	{
+	    s--;
+	    a=Character.getNumericValue(n.charAt(s));
+	    //n=n/10;
+	    
+	    b=Character.getNumericValue(p.charAt(s));
+	   // p=p/10;
+	    c=Math.abs(a+10-b);
+	    d=Math.abs(b+10-a);
+	    e=Math.abs(a-b);
+	    f=Math.min (Math.min(c,e),d);
+	   // System.out.println("for "+a+" ->"+b+"  = "+f+" or "+c+ " or" +d);
+	    sum=sum+f;
+	}
+	
+		System.out.println(sum);
+	}
+}
