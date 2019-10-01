@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+public class Main{
+    public static void main(String args[])
+    {
+        Scanner scan=new Scanner(System.in);
+        int k=scan.nextInt();
+        int a[][]=new int[k][2];
+        int Mishka=0,Chris=0;
+        for(int i=0;i<k;i++)
+        {
+            for(int j=0;j<2;j++)
+            {
+                a[i][j]=scan.nextInt();
+            }
+            if(a[i][0]<a[i][1])
+            {
+                Chris++;
+            }
+            else if(a[i][0]>a[i][1])
+            {
+                Mishka++;
+            }
+            else
+            {
+                
+            }
+        }
+        
+        if(Mishka>Chris)
+        {
+            System.out.println("Mishka");
+        }
+        else if(Mishka==Chris)
+        {
+            System.out.println("Friendship is magic!^^");
+        }
+        else 
+        {
+            System.out.println("Chris");
+        }
+    }
+}
