@@ -1,0 +1,37 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	   String k=scan.nextLine();
+	   if(k.contains("-"))
+	   {
+	   int j=k.length();
+	   int g=Math.abs(Integer.valueOf(k.substring(0,j-1)));
+	   int f=Math.abs(Integer.valueOf(k.substring(0,j-2)+k.substring(j-1)));
+	   if(g==0||f==0)
+	   {
+	       System.out.println(0);
+	       return ;
+	   }
+	  // System.out.println(g);
+	   //System.out.println(f);
+	    int l=Math.min(f,g);
+	    System.out.println("-"+l);
+	       return ;
+	   }
+	    else{
+	        System.out.println(k);
+	    }
+	}
+}
