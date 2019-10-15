@@ -1,0 +1,38 @@
+import java.util.Scanner;
+import java.io.*;
+ 
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	    int s=scan.nextInt();
+	    int j=0;
+	    int a=0,d=0;
+	    for(int i=4;i<=(s/2);i++)
+	    {
+	        j=s-i;
+	        a=0;d=0;
+	        if(j==5||j==7||i==5||i==7){
+	        }
+	        else{
+	        if((j%2==0)||(j%3==0)||(j%5==0)||(j%7==0))
+	        {
+	            a=1;
+	        }
+	         if((i%2==0)||(i%3==0)||(i%5==0)||(i%7==0))
+	        {
+	            d=1;
+	        } 
+	            
+	        }
+	     
+	     
+	        if(d==1&&a==1)
+	        {
+	            System.out.println(i+" "+j);
+	            return ;
+	        }
+	    }
+	//	System.out.println("Hello World");
+	}
+}
