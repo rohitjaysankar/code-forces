@@ -7,7 +7,6 @@ public class Main
 		Scanner scan=new Scanner(System.in);
 		int a=scan.nextInt();
 		int b=scan.nextInt();
-		System.out.println(a+(a/b));
-		
-	}
+	System.out.println(a+((a-1)/(b-1)));
+}
 }
