@@ -1,0 +1,19 @@
+import java.util.*;
+public class reg {
+public static void main(String args[]){
+	Scanner scan = new Scanner(System.in);
+	int size = scan.nextInt(); 
+	HashMap<String, Integer> mp = new HashMap<>();
+	for(int i = 0;i<size;i++){
+		String s = scan.next();
+		if(!mp.containsKey(s)){
+			mp.put(s, 0);
+			System.out.println("OK");
+		}
+		else{
+			mp.put(s, mp.get(s)+1);
+			System.out.println(s+mp.get(s));
+		}
+	}
+}
+}
